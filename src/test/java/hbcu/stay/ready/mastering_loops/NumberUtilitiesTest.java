@@ -3,12 +3,13 @@ package hbcu.stay.ready.mastering_loops;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class NumberUtilitiesTest {
+public class NumberUtilitiesTest 
+{
     @Test
     public void testGetRange1A() {
         // : Given
         String expected = "0123456789";
-        int stop = 11;
+        int stop = 10;
 
         // : When
         String actual = NumberUtilities.getRange(stop);
@@ -42,18 +43,6 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void testGetRange1B() {
         // : Given
@@ -87,7 +76,7 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetRange3B() {
         // : Given
-        String expected = "100101103104105106107108109";
+        String expected = "100101102103104105106107108109";
         int start = 100;
         int stop = 110;
 
@@ -97,19 +86,6 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void testGetRange1C() {
         // : Given
@@ -156,26 +132,14 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void testGetEvenNumbers() {
         // : Given
-        String expected = "5791113151719";
+        String expected = "681012141618";
         int start = 5;
         int stop = 20;
+        int step = 5;
+
 
         // : When
         String actual = NumberUtilities.getEvenNumbers(start, stop);
@@ -187,10 +151,9 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetOddNumbers() {
         // : Given
-        String expected = "681012141618";
+        String expected = "5791113151719";
         int start = 5;
         int stop = 20;
-        int step = 5;
 
         // : When
         String actual = NumberUtilities.getOddNumbers(start, stop);
@@ -198,8 +161,6 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
-
 
     @Test
     public void testGetSquareNumbers() {
@@ -215,8 +176,6 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
-
     @Test
     public void testGetExponentiationNumbers() {
         // : Given
@@ -232,3 +191,4 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 }
+
